@@ -15,7 +15,7 @@ def main():
 
     st.set_page_config(layout="wide")
 
-    st.sidebar.image("f3.png", width=100)
+   
     st.title("Dashboard de Vendas 📊")
 
     df = carregar_dados()
