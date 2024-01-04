@@ -2,7 +2,6 @@ import pandas as pd
 import streamlit as st 
 import plotly.express as px 
 from streamlit_extras.metric_cards import style_metric_cards
-import locale
 
 @st.cache_data
 def carregar_dados():
@@ -30,8 +29,7 @@ def main():
 
     total_custo = (df_filtrado["Custo"].sum())
     total_custo = f"R$ {total_custo:,.2f}"
-    #locale.setlocale(locale.LC_ALL, "pt_BR.UTF-8")
-    #total_custo = locale.currency(total_custo, grouping=True)
+   
     
 
     total_lucro = (df_filtrado["Lucro"].sum())
